@@ -200,6 +200,9 @@ vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=0
 vendor.usb.use_gadget_hal=0
 
+# Verity
+ro.apk_verity.mode=2
+
 # Wifi
 wifi.aware.interface=wifi-aware0
 
