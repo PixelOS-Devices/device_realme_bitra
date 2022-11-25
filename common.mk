@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
+    libcamera_metadata_shim \
     libstdc++.vendor
 
 PRODUCT_COPY_FILES += \
