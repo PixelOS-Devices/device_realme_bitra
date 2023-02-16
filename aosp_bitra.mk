@@ -28,6 +28,8 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Screen density
+TARGET_SCREEN_DENSITY := 420
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_bitra
