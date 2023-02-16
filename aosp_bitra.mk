@@ -28,6 +28,9 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Screen density
+TARGET_SCREEN_DENSITY := 420
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_bitra
 PRODUCT_DEVICE := bitra
