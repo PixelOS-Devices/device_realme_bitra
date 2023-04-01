@@ -24,6 +24,8 @@ $(call inherit-product, vendor/realme/bitra/bitra-vendor.mk)
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Audio
+TARGET_USES_BLUETOOTH_LE_AUDIO := true
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
