@@ -18,22 +18,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
-
-# Enable extra UDFPS animations
-EXTRA_UDFPS_ANIMATIONS := true
-
-# Enable quick tap
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Set Boot Animination Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Inherit some common Pixelos stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_bitra
+PRODUCT_NAME := aosp_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370
