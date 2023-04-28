@@ -24,8 +24,10 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Pixelos stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_QUICK_TAP := true
+
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_bitra
