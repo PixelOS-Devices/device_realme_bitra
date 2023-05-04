@@ -36,6 +36,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
+# Ih8sn
+PRODUCT_PACKAGES += \
+    ih8sn
+
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
@@ -44,4 +48,5 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/realme/bitra
+    device/realme/bitra \
+    vendor/ih8sn
