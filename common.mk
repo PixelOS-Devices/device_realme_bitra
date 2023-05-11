@@ -438,6 +438,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V1-ndk_platform.vendor
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
