@@ -165,6 +165,10 @@ vendor.media.vpp.sr.enable=0
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf-hal.ver=2.2
+ro.vendor.qspm.enable=true
+vendor.pasr.activemode.enabled=true
+vendor.power.pasr.enabled=false
 
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1

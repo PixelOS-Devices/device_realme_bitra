@@ -236,7 +236,6 @@ PRODUCT_PACKAGES += \
     init.oplus.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.sh \
@@ -249,10 +248,6 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
-
-# Light
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.oplus
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -330,16 +325,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.oplus-libperfmgr
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -387,8 +377,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/sm8250-common \
-    hardware/google/interfaces \
-    hardware/google/pixel \
     hardware/oplus \
     vendor/qcom/opensource/usb/etc
 
