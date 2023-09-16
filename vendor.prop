@@ -60,6 +60,7 @@ vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
+bluetooth.device.default_name=realme GT Neo2 5G
 bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
 bluetooth.hardware.power.rx_cur_ma=28
@@ -121,6 +122,7 @@ vendor.display.use_smooth_motion=1
 drm.service.enabled=true
 
 # Fingerprint
+persist.vendor.fp.template_updateflag=V1
 persist.vendor.qfp=true
 vendor.flash.locked=0
 
@@ -174,6 +176,7 @@ vendor.power.pasr.enabled=false
 persist.vendor.qcomsysd.enabled=1
 
 # Radio
+persist.radio.multisim.config=dsds
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.enableadvancedscan=true
@@ -189,6 +192,7 @@ persist.vendor.sensors.sync_request=true
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
+vendor.usb.product_string=realme GT Neo2 5G
 vendor.usb.qdss.inst.name=qdss_sw
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
