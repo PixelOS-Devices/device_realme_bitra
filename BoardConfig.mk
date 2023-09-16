@@ -91,17 +91,17 @@ TARGET_USES_QTI_MAPPER_EXTENSIONS_1_1 := true
 TARGET_SCREEN_DENSITY := 480
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/device_framework_matrix.xml \
-    $(DEVICE_PATH)/vendor_framework_compatibility_matrix.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+    $(DEVICE_PATH)/configs/hidl/device_framework_matrix.xml \
+    $(DEVICE_PATH)/configs/hidl/vendor_framework_compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_bitra
