@@ -1703,7 +1703,6 @@ system_ext/app/uceShimService/uceShimService.apk
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
-system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
 system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
 system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
 system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
@@ -1715,7 +1714,6 @@ system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
-system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so
