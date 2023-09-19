@@ -321,6 +321,7 @@ $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 PRODUCT_PACKAGES += \
     AOSPApertureResTarget \
+    AOSPFrameworksResTarget \
     AOSPSettingsResTarget \
     CarrierConfigResTarget \
     FrameworksResTarget \
