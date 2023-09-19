@@ -320,6 +320,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 PRODUCT_PACKAGES += \
+    AOSPApertureResTarget \
     AOSPSettingsResTarget \
     CarrierConfigResTarget \
     FrameworksResTarget \
