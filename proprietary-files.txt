@@ -647,6 +647,7 @@ odm/etc/camera/mwStereoParams.bin
 odm/etc/camera/settings_fdc.txt
 odm/etc/camera/settings_fdc_lite.txt
 odm/etc/camera/wide.bin
+odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/lib/libDeVIS.so
 odm/lib/libc++_shared.so
 odm/lib64/camera/components/com.oplus.node.aiaftrack.so
