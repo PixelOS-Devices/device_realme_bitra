@@ -19,16 +19,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common ArrowOS stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
-ARROW_GAPPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# AwakenOS Extras
+AWAKEN_BUILD_TYPE := official
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_bitra
+PRODUCT_NAME := awaken_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370
@@ -40,8 +45,8 @@ PRODUCT_SYSTEM_DEVICE := RE879AL1
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="RMX3370-user 12 RKQ1.211103.002 R.202209132115 release-keys" \
+    PRIVATE_BUILD_DESC="RMX3370-user 13 TP1A.220905.001 R.1204c51_b6a6-99a70 release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := realme/RMX3370/RE879AL1:12/RKQ1.211103.002/R.202209132115:user/release-keys
+BUILD_FINGERPRINT := realme/RMX3370/RE879AL1:13/TP1A.220905.001/R.1204c51_b6a6-99a70:user/release-keys
