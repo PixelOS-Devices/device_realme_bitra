@@ -61,17 +61,6 @@ function blob_fixup() {
         vendor/lib/libgui1_vendor.so)
             patchelf --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
-        vendor/etc/libnfc-nci.conf)
-            sed -i 's|NFC_DEBUG_ENABLED=1|NFC_DEBUG_ENABLED=0|g' "${2}"
-            ;;
-        vendor/etc/libnfc-nxp-21619.conf)
-            sed -i 's|LOGLEVEL=0x03|LOGLEVEL=0x01|g' "${2}"
-            sed -i 's|NFC_DEBUG_ENABLED=1|NFC_DEBUG_ENABLED=0x00|g' "${2}"
-            ;;
-        vendor/etc/libnfc-nxp-2169B.conf)
-            sed -i 's|LOGLEVEL=0x03|LOGLEVEL=0x01|g' "${2}"
-            sed -i 's|NFC_DEBUG_ENABLED=1|NFC_DEBUG_ENABLED=0x00|g' "${2}"
-            ;;
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
             ;;

@@ -1438,9 +1438,6 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_21619:vendor/etc/libnfc-nxp-21619.conf
-odm/etc/nfc/libnfc-mtp-SN100.conf_2169B:vendor/etc/libnfc-nxp-2169B.conf
-odm/etc/nfc/libnfc-nci.conf_2169B:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57:vendor/firmware/sn100u.bin
 
 # OMX
