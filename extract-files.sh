@@ -59,7 +59,7 @@ function blob_fixup() {
             sed -i "s|my_product|product|" "${2}"
             ;;
         vendor/lib/libgui1_vendor.so)
-            patchelf --replace-needed "libui.so" "libui-v30.so" "${2}"
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
