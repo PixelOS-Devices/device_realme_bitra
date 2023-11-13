@@ -7,13 +7,6 @@
 
 prjname=`getprop ro.boot.prjname`
 
-# NFC
-if [ "$prjname" = "21619" ] || [ "$prjname" = "2161A" ]; then
-    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-china.conf"
-elif [ "$prjname" = "2169A" ] || [ "$prjname" = "2169B" ]; then
-    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-global.conf"
-fi
-
 # Wifi
 persistbdf=`md5sum /mnt/vendor/persist/bdwlan.elf |cut -d" " -f1`
 persistRegdb=`md5sum /odm/etc/wifi/regdb.bin |cut -d" " -f1`
