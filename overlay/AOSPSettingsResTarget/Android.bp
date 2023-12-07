@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "AOSPSettingsResTarget",
-    vendor: true,
+    product_specific: true,
 }
