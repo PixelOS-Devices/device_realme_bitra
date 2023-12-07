@@ -27,9 +27,6 @@
     <!-- Color of the UDFPS Pressed view -->
     <color name="config_udfpsColor">#00ffffff</color>
 
-    <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">99</integer>
-
     <!-- HBM type of UDFPS overlay.
             0 - GLOBAL HBM
             1 - LOCAL HBM
