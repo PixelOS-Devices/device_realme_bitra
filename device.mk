@@ -328,7 +328,6 @@ PRODUCT_PACKAGES += \
     AOSPApertureResTarget \
     AOSPFrameworksResTarget \
     AOSPSettingsResTarget \
-    CarrierConfigResTarget \
     FrameworksResTarget \
     OPlusCarrierConfigResTarget \
     OPlusFrameworksResTarget \
