@@ -18,22 +18,24 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common ArrowOS stuff
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# AwakenOS Extras
-AWAKEN_BUILD_TYPE := official
+# Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Extras
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_YOUTUBE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := awaken_bitra
+PRODUCT_NAME := aosp_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370

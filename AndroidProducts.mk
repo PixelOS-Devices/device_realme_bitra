@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_bitra.mk
+    $(LOCAL_DIR)/aosp_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_bitra-user \
-    awaken_bitra-userdebug \
-    awaken_bitra-eng
+    aosp_bitra-user \
+    aosp_bitra-userdebug \
+    aosp_bitra-eng
